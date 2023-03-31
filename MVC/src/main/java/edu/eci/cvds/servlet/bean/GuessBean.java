@@ -7,6 +7,9 @@ import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
+import org.springframework.stereotype.Component;
+
+@Component
 @ManagedBean(name = "guessBean")
 @SessionScoped
 public class GuessBean {
@@ -25,7 +28,6 @@ public class GuessBean {
 
         if (tries == this.luckyNum){
             //this.price += 100000;
-            
             this.state = "WIN";
             this.tries++;
             this.triesList.add(this.tries);
