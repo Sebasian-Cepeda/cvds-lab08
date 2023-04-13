@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml" 
+      xmlns:h="http://xmlns.jcp.org/jsf/html" 
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body>
+     <h:form id="welcome_form">
+        <h1>bienvenido</h1>
+        <h:panelGrid>
+              <p:outputLabel value="Digite su nombre de usuario:  "/>
+              <p:inputText type="text" title="Try" value="#{userBean.name}"/>
+        </h:panelGrid>
+        <p:commandButton value="Start" action="guess.xhtml"/>
+  </h:form>
+</h:body>
+
+</html>

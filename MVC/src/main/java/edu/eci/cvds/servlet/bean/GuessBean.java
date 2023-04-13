@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ManagedBean(name = "guessBean")
-@SessionScoped
+@ApplicationScoped
 public class GuessBean {
     private int luckyNum;
     private int tries;
